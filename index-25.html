@@ -1,0 +1,329 @@
+
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d2235">
+<title>Shivam Tour & Travels | Kolkata | Since 1999</title>
+<style>
+:root{--navy:#0d2235;--navy2:#173c59;--gold:#f4b942;--cream:#fffaf1;--red:#d94a3a;--green:#16b85a;--text:#17212b;--muted:#66727d;--line:#e6e9ec;--shadow:0 16px 45px rgba(13,34,53,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans Bengali","Noto Sans Devanagari","Noto Sans","Nirmala UI","Mangal","Noto Sans","Segoe UI",Arial,sans-serif;color:var(--text);line-height:1.55;background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,calc(100% - 30px));margin:auto}
+.top{background:var(--navy);color:#fff;font-size:13px}.top .container{min-height:38px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 4px 18px rgba(0,0,0,.04)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px}.logo-icon{width:45px;height:45px;border-radius:13px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-size:24px;font-weight:900}.logo b{font-size:19px;color:var(--navy);display:block;line-height:1.1}.logo small{font-size:10px;color:var(--muted)}
+.menu{display:flex;gap:22px;font-weight:800;font-size:14px}.menu a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:12px 18px;border-radius:999px;font-weight:900;border:0;cursor:pointer}.gold{background:var(--gold);color:var(--navy)}.dark{background:var(--navy);color:#fff}.wa{background:var(--green);color:#fff}
+.hero{min-height:610px;color:#fff;display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,23,37,.96),rgba(7,23,37,.76) 48%,rgba(7,23,37,.24)),url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-inner{padding:75px 0;max-width:720px}.badge{display:inline-block;color:#ffe08b;background:rgba(244,185,66,.14);border:1px solid rgba(244,185,66,.45);padding:7px 13px;border-radius:30px;font-weight:900;font-size:13px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.08;margin:17px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;max-width:650px;color:#eef3f6}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.quick{margin-top:-45px;position:relative;z-index:3}.quick-box{background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.quick-item{padding:12px 14px;border-right:1px solid var(--line)}.quick-item:last-child{border:0}.quick-item strong{display:block;color:var(--navy);font-size:13px}.quick-item span{font-size:14px;color:var(--muted)}
+.section{padding:82px 0}.alt{background:#f8fafb}.eyebrow{color:var(--red);font-weight:900;font-size:13px;text-transform:uppercase;letter-spacing:.8px}.section-head{max-width:750px;margin-bottom:32px}.section h2{font-size:clamp(30px,4vw,46px);line-height:1.15;color:var(--navy);margin:7px 0 12px}.section-head p{color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-photo{min-height:440px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:url("https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85") center/cover}.about-copy p{margin:12px 0;color:#53616c}.owner{margin-top:24px;padding:20px;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:14px;background:#fff}.owner b{display:block;font-size:19px;color:var(--navy)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.stat{background:var(--cream);border-radius:15px;padding:20px;text-align:center}.stat b{font-size:29px;color:var(--navy);display:block}.stat span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 7px 22px rgba(13,34,53,.06)}.card img{height:210px;background:#f2f4f5}.card-body{padding:18px}.card h3{color:var(--navy);margin-bottom:6px}.card p{color:var(--muted);font-size:14px}.pill{display:inline-block;margin-top:10px;background:#eef5f8;color:var(--navy);font-size:11px;font-weight:900;padding:5px 9px;border-radius:20px}
+.fleet{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.car{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.06)}.car-img{height:225px;background:#f7f7f7;display:flex;align-items:center;justify-content:center}.car-img img{height:100%;object-fit:contain}.car-body{padding:18px}.car h3{color:var(--navy)}.price{font-size:22px;font-weight:900;color:var(--red);margin:8px 0}.meta{font-size:13px;color:var(--muted)}
+.rate{margin-top:35px;border-collapse:collapse;width:100%;background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}.rate th,.rate td{padding:14px;border-bottom:1px solid var(--line);text-align:left}.rate th{background:var(--navy);color:#fff}.rate td strong{color:var(--red)}
+.photo-note{margin:-8px 0 20px;padding:11px 14px;border-left:4px solid var(--gold);background:#fff8e7;border-radius:10px;color:#6b5a31;font-size:12px}.dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.dest{border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.09);position:relative}.dest img{height:230px;width:100%;object-fit:cover;display:block;transition:transform .5s ease;object-position:center}.dest:hover img{transform:scale(1.045)}.dest-body{padding:18px 18px 20px;background:linear-gradient(180deg,#fff 0%,#fffdf9 100%)}.dest h3{color:var(--navy);font-size:21px}.dest p{color:var(--muted);font-size:14px;margin-top:6px}.dest .tag{color:var(--red);font-weight:900;font-size:11px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.why-box{background:#fff;padding:25px;border-radius:18px;border:1px solid var(--line)}.why-box .icon{font-size:28px}.why-box h3{margin:8px 0;color:var(--navy)}.why-box p{color:var(--muted);font-size:14px}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.quote{padding:24px;border:1px solid var(--line);border-radius:18px;background:#fff}.quote p{color:#4d5b65}.quote b{display:block;margin-top:15px;color:var(--navy)}
+.contact{background:var(--navy);color:#fff}.contact h2{color:#fff}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px}.contact-card{background:#fff;color:var(--text);border-radius:20px;padding:26px}.contact-card p{margin:9px 0}.contact-card b{color:var(--navy)}footer{background:#071521;color:#cdd7df;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.lang{display:flex;gap:7px;margin-top:15px}.lang button{border:1px solid #d8dee3;background:#fff;border-radius:20px;padding:7px 12px;cursor:pointer;font-weight:800}.mobile-wa{display:none}
+@media(max-width:900px){.menu{display:none}.quick-box{grid-template-columns:1fr 1fr}.cards,.fleet{grid-template-columns:1fr 1fr}.dest-grid{grid-template-columns:1fr 1fr}.about,.contact-grid{grid-template-columns:1fr}.about-photo{min-height:320px}.why,.testimonials{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.top .container{font-size:11px}.nav{height:65px}.logo b{font-size:15px}.hero{min-height:570px}.hero-inner{padding:55px 0}.hero p{font-size:15px}.quick{margin-top:-25px}.quick-box{grid-template-columns:1fr 1fr}.quick-item{border:0}.section{padding:58px 0}.cards,.fleet,.dest-grid,.why,.testimonials{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.rate{font-size:12px}.rate th,.rate td{padding:9px 7px}.mobile-wa{display:flex;position:fixed;right:16px;bottom:16px;z-index:60}.mobile-wa a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:25px;box-shadow:0 10px 25px rgba(0,0,0,.25)}}
+</style>
+
+<style id="shivam-logo-style">
+.brand-logo{width:220px;height:64px;display:block}
+.brand-logo-wrap{display:flex;align-items:center;text-decoration:none}
+@media(max-width:720px){.brand-logo{width:185px;height:54px}}
+</style>
+
+<style id="shivam-i18n-style">
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans Bengali","Noto Sans Devanagari","Nirmala UI","Mangal",
+               "Noto Sans","Segoe UI",Arial,sans-serif;
+}
+.bn,.hi,.en{font-family:inherit}
+.lang-switch{display:flex;gap:6px;align-items:center;margin-left:12px}
+.lang-switch button{
+  border:1px solid rgba(11,94,215,.22);background:#fff;color:#123b68;
+  border-radius:999px;padding:7px 11px;font:700 12px/1 inherit;cursor:pointer
+}
+.lang-switch button.active{background:#0b5ed7;color:#fff;border-color:#0b5ed7}
+[data-i18n]{transition:opacity .12s ease}
+@media(max-width:720px){
+ .lang-switch{margin:8px 0 0;justify-content:center}
+ .lang-switch button{padding:6px 9px}
+}
+</style>
+
+
+
+<style id="shivam-final-i18n-css">
+html,body{font-family:"Noto Sans Bengali","Noto Sans Devanagari","Nirmala UI","Mangal","Noto Sans","Segoe UI",Arial,sans-serif}
+.rate th,.rate td,.fleet .car-body,.fleet .car-body h3,.fleet .car-body .meta{font-family:inherit}
+.i18n-rate-note{font-family:inherit}
+</style>
+</head>
+<body>
+<div class="top"><div class="container"><span>📍 Wellesley House 7, Red Cross Place, Kolkata - 700001</span><span>📞 9830057750 &nbsp; | &nbsp; WhatsApp 9804763573</span></div></div>
+<header class="header"><div class="container nav">
+<a class="logo" href="#home"><svg class="brand-logo" viewBox="0 0 220 64" role="img" aria-label="Shivam Tour & Travels logo" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b5ed7"/></stop>
+      <stop offset="1" stop-color="#18a6a6"/></stop>
+    </lineargradient>
+  </defs>
+  <circle cx="32" cy="32" r="27" fill="url(#lg)"/></circle>
+  <path d="M17 35c7-12 18-18 30-16-5 2-8 5-10 9 6-2 11-1 15 2-7 1-12 4-16 10-6-1-12-2-19-5z" fill="#fff"/></path>
+  <path d="M14 43h36" stroke="#fff" stroke-width="3" stroke-linecap="round"/></path>
+  <text x="68" y="29" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#123b68">SHIVAM</text>
+  <text x="68" y="47" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0b7f86">TOUR &amp; TRAVELS</text>
+</svg><span class="logo-icon">✦</span><span><b>Shivam Tour & Travels</b><small>Reliable Travel Partner • Kolkata</small></span></a>
+<div class="lang-switch" id="langSwitch" aria-label="Language selector">
+<button type="button" data-lang="bn">বাংলা</button>
+<button type="button" data-lang="en">English</button>
+<button type="button" data-lang="hi">हिन्दी</button>
+</div><nav class="menu"><a href="#about"><span data-i18n-key="About Us">About Us</span></a><a href="#services"><span data-i18n-key="Services">Services</span></a><a href="#fleet">Cars</a><a href="#destinations">Destinations</a><a href="#contact">Contact</a></nav>
+<a class="btn gold" href="https://wa.me/919804763573?text=Hello%20Shivam%20Tour%20%26%20Travels%2C%20I%20want%20to%20book%20a%20car."><span data-i18n-key="Book Your Cab">Book Your Cab</span></a>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="container"><div class="hero-inner">
+<span class="badge">SERVING SINCE 1999 • 25+ YEARS OF SERVICE</span>
+<h1>Comfortable journeys.<br><span>Trusted travel service.</span></h1>
+<p>Shivam Tour & Travels — Kolkata-based car rental, rail & air ticketing, wedding and corporate fleet support, and customized holiday tours for families, businesses and travellers.</p>
+<div class="hero-actions"><a class="btn gold" href="#fleet">🚘 View Our Cars</a><a class="btn wa" href="https://wa.me/919804763573?text=Hello%20Shivam%20Tour%20%26%20Travels%2C%20I%20want%20to%20plan%20a%20trip.">💬 WhatsApp Us</a></div>
+</div></div></section>
+
+<section class="quick"><div class="container"><div class="quick-box">
+<div class="quick-item"><strong>🚗 Car Rental</strong><span>Local & outstation</span></div><div class="quick-item"><strong>🚆 Rail Tickets</strong><span>IRCTC e-ticketing support</span></div><div class="quick-item"><strong>✈️ Air Tickets</strong><span>Domestic & international</span></div><div class="quick-item"><strong>🧳 Holiday Tours</strong><span>Custom itineraries</span></div>
+</div></div></section>
+
+<section class="section" id="about"><div class="container about">
+<div class="about-photo"></div>
+<div class="about-copy"><span class="eyebrow">About Shivam Tour & Travels</span><h2>Your trusted travel partner since 1999</h2>
+<p>For more than 25 years, Shivam Tour & Travels has been serving travellers with dependable car rental and travel assistance from Kolkata. Our focus is simple: comfortable vehicles, courteous service, transparent charges and dependable coordination from booking to journey completion.</p>
+<p>From a local city ride or airport/railway transfer to a family holiday, wedding fleet or corporate movement, we arrange practical travel solutions around your schedule.</p>
+<div class="owner"><small>PROPRIETOR</small><b>Mr. Jitendra Kumar Chaurasia</b><span>Shivam Tour & Travels • Kolkata</span></div>
+<div class="stats"><div class="stat"><b>25+</b><span>Years of Service</span></div><div class="stat"><b>4</b><span>Featured Cars</span></div><div class="stat"><b>9+</b><span>Popular Destinations</span></div><div class="stat"><b>24/7</b><span>Booking Assistance</span></div></div>
+</div></div></section>
+
+<section class="section alt" id="services"><div class="container"><div class="section-head"><span class="eyebrow">Our Services</span><h2>Everything you need for a smooth journey</h2><p>One travel partner for everyday transport, special occasions and holiday planning.</p></div>
+<div class="cards">
+<div class="card"><div class="card-body"><h3>🚘 Luxury Car Rental</h3><p>Chauffeur-driven cars for local, airport, railway and outstation travel.</p><span class="pill">Local • Outstation</span></div></div>
+<div class="card"><div class="card-body"><h3>🚆 Rail Ticketing</h3><p>IRCTC authorized rail e-ticketing support, Tatkal guidance, PNR tracking and rescheduling assistance.</p><span class="pill">Rail Support</span></div></div>
+<div class="card"><div class="card-body"><h3>✈️ Air Tickets</h3><p>Domestic and international flight booking support, web check-in and travel alerts.</p><span class="pill">Flights</span></div></div>
+<div class="card"><div class="card-body"><h3>💍 Wedding & Corporate</h3><p>Multi-car fleet coordination, dedicated support, decoration and contract requirements.</p><span class="pill">Events & Business</span></div></div>
+</div></div></section>
+
+<section class="section" id="fleet"><div class="container"><div class="section-head"><span class="eyebrow">Our Car List</span><h2>Choose your ideal white vehicle</h2><p>Comfortable chauffeur-driven vehicles for city rides, family trips and outstation journeys.</p></div>
+<div class="fleet">
+<div class="car"><div class="car-img"><img src="https://static3.toyotabharat.com/images/showroom/innova-mmc/white-pearl-crystal-color-1600x600.webp" alt="White Toyota Innova Crysta" onerror="this.style.display='none'"></div><div class="car-body"><h3>Toyota Innova Crysta</h3><div class="price">₹3,000</div><div class="meta">10 Hrs • 80 Km • 7-seater AC • Chauffeur driven</div></div></div>
+<div class="car"><div class="car-img"><img src="https://static3.toyotabharat.com/images/showroom/rumion/car-color/monotone/cafe-white.webp" alt="White Toyota Rumion" onerror="this.style.display='none'"></div><div class="car-body"><h3>Toyota Rumion</h3><div class="price">₹2,600</div><div class="meta">10 Hrs • 80 Km • 7-seater • Comfortable long drives</div></div></div>
+<div class="car"><div class="car-img"><img src="https://static3.toyotabharat.com/images/showroom/innova-mmc/white-pearl-crystal-color-1600x600.webp" alt="White Toyota Innova reference" onerror="this.style.display='none'"></div><div class="car-body"><h3>Toyota Innova</h3><div class="price">₹2,500</div><div class="meta">10 Hrs • 80 Km • Spacious luggage • Outstation</div></div></div>
+<div class="car"><div class="car-img"><img src="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:2208ddfe-350c-415d-95b2-d82160687aec/as/Dzire_Mob_Varient_750x1354.png?id=1&preferwebp=true&width=750" alt="White Maruti Suzuki Dzire" onerror="this.style.display='none'"></div><div class="car-body"><h3>Maruti Suzuki Dzire</h3><div class="price">₹2,000</div><div class="meta">10 Hrs • 80 Km • Comfortable 4-seater • Fuel efficient</div></div></div>
+</div>
+<table class="rate"><thead><tr><th>Vehicle</th><th>10 Hr / 80 Km</th><th>Extra / Hour</th><th>Extra / Km</th></tr></thead><tbody>
+<tr><td>Toyota Crysta</td><td><strong>₹3,000</strong></td><td>₹300</td><td>₹30</td></tr>
+<tr><td>Toyota Rumion</td><td><strong>₹2,600</strong></td><td>₹260</td><td>₹26</td></tr>
+<tr><td>Toyota Innova</td><td><strong>₹2,500</strong></td><td>₹250</td><td>₹25</td></tr>
+<tr><td>Swift Dzire</td><td><strong>₹2,000</strong></td><td>₹200</td><td>₹20</td></tr>
+</tbody></table>
+<p style="margin-top:10px;color:#66727d;font-size:13px">Parking & Toll Tax: separate at actuals.</p>
+</div></section>
+
+<section class="section alt" id="destinations"><div class="container"><div class="section-head"><span class="eyebrow">Holiday Tours & Destinations</span><h2>Explore Kolkata & West Bengal with us</h2><p>Plan a comfortable day trip, weekend break or longer holiday with car and itinerary support.</p></div>
+<div class="photo-note">📸 Destination photographs are selected to show the actual landmark or travel landscape.</div><div class="dest-grid">
+<div class="dest"><img src="https://captureatrip-cms-storage.s3.ap-south-1.amazonaws.com/Victoria_Memorial_in_kolkata_01a894cc0c.webp" alt="Victoria Memorial Kolkata"><div class="dest-body"><span class="tag">KOLKATA</span><h3>Victoria Memorial</h3><p>Discover Kolkata's iconic white-marble landmark, gardens and museum in a relaxed city sightseeing itinerary.</p></div></div>
+<div class="dest"><img src="https://www.easymyjourney.com/images/IND/temples/Kalighat-Kali-Temple.jpg" alt="Kalighat Temple Kolkata"><div class="dest-body"><span class="tag">KOLKATA</span><h3>Kalighat Temple</h3><p>A major spiritual destination in Kolkata. Combine temple visit with nearby city sightseeing and comfortable pickup/drop.</p></div></div>
+<div class="dest"><img src="https://topplacesindia.com/img/attractions/west-bengal/birla-mandir/birla-mandir-hero.jpg" alt="Kolkata city"><div class="dest-body"><span class="tag">KOLKATA</span><h3>Birla Planetarium</h3><p>A popular family-friendly Kolkata stop for an educational city tour and nearby attractions.</p></div></div>
+<div class="dest"><img src="https://res.cloudinary.com/rehash-studio/image/upload/fl_progressive%3Asemi%2Cf_auto%2Cq_auto%2Cw_auto%2Cdpr_auto/if_w_gt_1920%2Cw_1920/v1736752353/upload/358fcaaf-057a-488b-9aa6-373ad2ef45bf.webp" alt="Zoo nature"><div class="dest-body"><span class="tag">FAMILY TOUR</span><h3>Alipore Zoo</h3><p>Enjoy a family day around one of Kolkata's well-known attractions with convenient car service.</p></div></div>
+<div class="dest"><img src="https://im.whatshot.in/img/2025/Jun/indian-museum-1749801742.jpg" alt="Museum"><div class="dest-body"><span class="tag">HERITAGE</span><h3>Indian Museum</h3><p>Plan a heritage and culture day in central Kolkata with flexible pickup and drop.</p></div></div>
+<div class="dest"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/2c/b5/43/caption.jpg?h=800&s=1&w=1400" alt="Ganga river"><div class="dest-body"><span class="tag">PILGRIMAGE</span><h3>Gangasagar</h3><p>Plan a spiritual and scenic journey to Sagar Island with coordinated car travel.</p></div></div>
+<div class="dest"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LAUNCH_SAFARI_IN_SUNDARBON.jpg" alt="Forest Sundarbans"><div class="dest-body"><span class="tag">NATURE</span><h3>Sundarbans</h3><p>Combine road travel with a planned Sundarbans itinerary and verified stay arrangements.</p></div></div>
+<div class="dest"><img src="https://www.livemint.com/lm-img/img/2023/09/18/optimize/2-0-769800936-BOL-3Nov2016-Shantiniketan-The-entrance-to-Tagore-s-ashram-Amrita-Das-0_1680411097720_1694999982993.JPG" alt="Shantiniketan"><div class="dest-body"><span class="tag">CULTURE</span><h3>Shantiniketan</h3><p>A cultural getaway for families and groups, with customizable vehicle and stay planning.</p></div></div>
+<div class="dest"><img src="https://d2t4j8u54b1zhq.cloudfront.net/temples/temple/original/1769765756717-Tarapith%203.jpg" alt="Tarapith travel"><div class="dest-body"><span class="tag">PILGRIMAGE</span><h3>Tarapith</h3><p>Comfortable pilgrimage travel with flexible departure, return and stopover planning.</p></div></div>
+</div></div></section>
+
+<section class="section"><div class="container"><div class="section-head"><span class="eyebrow">Why Choose Shivam</span><h2>Your journey, our commitment</h2></div><div class="why">
+<div class="why-box"><div class="icon">⏱️</div><h3>On-Time Pickup & Drop</h3><p>We coordinate travel schedules for city, airport, railway and outstation journeys.</p></div>
+<div class="why-box"><div class="icon">🧑‍✈️</div><h3>Experienced Drivers</h3><p>Professional chauffeur-driven service focused on courteous travel support.</p></div>
+<div class="why-box"><div class="icon">💳</div><h3>Transparent Pricing</h3><p>Clear package rates with parking and tolls shown separately at actuals.</p></div>
+<div class="why-box"><div class="icon">🧼</div><h3>Clean Vehicles</h3><p>Vehicle selection is planned around comfort, passenger count and journey type.</p></div>
+<div class="why-box"><div class="icon">🗺️</div><h3>Custom Tours</h3><p>Build your own itinerary for North Bengal, Sikkim, Puri, Vizag, Sundarbans and more.</p></div>
+<div class="why-box"><div class="icon">📞</div><h3>Travel Assistance</h3><p>Call or WhatsApp us for booking enquiries and trip coordination.</p></div>
+</div></div></section>
+
+<section class="section alt" id="reviews"><div class="container"><div class="section-head"><span class="eyebrow">Customer Feedback</span><h2>Travel support people can rely on</h2></div><div class="testimonials">
+<div class="quote"><p>“The Crysta package was comfortable and the billing was clear. Pickup was smooth.”</p><b>— Sandipan Bhattacharya, BBD Bagh</b></div>
+<div class="quote"><p>“We arranged a wedding fleet with Rumion and Dzire. The drivers were polite and punctual.”</p><b>— Rajesh Agarwal, Park Street</b></div>
+<div class="quote"><p>“Tatkal assistance and the Puri car trip were both coordinated conveniently.”</p><b>— Sucharita Roy, Salt Lake</b></div>
+</div></div></section>
+
+<section class="section contact" id="contact"><div class="container contact-grid"><div><span class="eyebrow" style="color:#ffe08b">Contact & Booking</span><h2>Ready for your next journey?</h2><p style="margin-top:15px;color:#d7e0e6">Tell us your date, pickup location, destination and vehicle requirement. We will coordinate the booking.</p><div class="hero-actions"><a class="btn gold" href="tel:+919830057750">📞 Call 9830057750</a><a class="btn wa" href="https://wa.me/919804763573">💬 WhatsApp 9804763573</a></div></div>
+<div class="contact-card"><h3>Shivam Tour & Travels</h3><p><b>Proprietor:</b> Mr. Jitendra Kumar Chaurasia</p><p><b>Head Office:</b> Wellesley House 7, Red Cross Place (1st Floor), Kolkata - 700001</p><p><b>Mobile:</b> 9830057750</p><p><b>WhatsApp:</b> 9804763573</p><p><b>Services:</b> Car Rental • Rail Tickets • Air Tickets • Wedding/Corporate Fleet • Holiday Tours</p></div></div></section>
+</main>
+<footer><div class="container foot"><div><b>Shivam Tour & Travels</b><br><small>Serving travellers since 1999 • Kolkata</small></div><div>© 2026 Shivam Tour & Travels</div></div></footer>
+<div class="mobile-wa"><a href="https://wa.me/919804763573" aria-label="WhatsApp">☘</a></div>
+
+
+
+
+
+
+
+<script id="shivam-final-i18n">
+(function(){
+const T={
+en:{
+nav:["About Us","Services","Cars","Destinations","Contact","Book Your Cab"],
+fleetTitle:"Choose your ideal white vehicle",
+fleetIntro:"Comfortable chauffeur-driven vehicles for city rides, family trips and outstation journeys.",
+cars:[
+["Toyota Innova Crysta","₹3,000","10 Hrs • 80 Km • 7-seater AC • Chauffeur driven"],
+["Toyota Rumion","₹2,600","10 Hrs • 80 Km • 7-seater • Comfortable long drives"],
+["Toyota Innova","₹2,500","10 Hrs • 80 Km • Spacious luggage • Outstation"],
+["Maruti Suzuki Dzire","₹2,000","10 Hrs • 80 Km • Comfortable 4-seater • Fuel efficient"]
+],
+rateHead:["Vehicle","10 Hr / 80 Km","Extra / Hour","Extra / Km"],
+rates:[
+["Toyota Crysta","₹3,000","₹300","₹30"],
+["Toyota Rumion","₹2,600","₹260","₹26"],
+["Toyota Innova","₹2,500","₹250","₹25"],
+["Swift Dzire","₹2,000","₹200","₹20"]
+],
+parking:"Parking & Toll Tax: separate at actuals.",
+dest:[
+["Victoria Memorial","Discover Kolkata's iconic white-marble landmark, gardens and museum in a relaxed city sightseeing itinerary."],
+["Kalighat Temple","A major spiritual destination in Kolkata. Combine temple visit with nearby city sightseeing and comfortable pickup/drop."],
+["Birla Planetarium","A popular planetarium and astronomy attraction near the Maidan."],
+["Alipore Zoo","Historic zoological garden in Kolkata, popular for family visits."],
+["Indian Museum","One of Kolkata's major museums, known for historic and cultural collections."],
+["Gangasagar","Pilgrimage and beach destination on Sagar Island."],
+["Sundarbans","World-famous mangrove region known for boat trips and nature experiences."],
+["Shantiniketan","Cultural and educational heritage destination associated with Rabindranath Tagore."],
+["Tarapith","Famous temple and pilgrimage town in Birbhum."]
+]
+},
+bn:{
+nav:["আমাদের সম্পর্কে","পরিষেবা","গাড়ি","গন্তব্য","যোগাযোগ","ক্যাব বুক করুন"],
+fleetTitle:"আপনার পছন্দের সাদা গাড়ি বেছে নিন",
+fleetIntro:"শহর ভ্রমণ, পরিবারসহ বেড়ানো ও আউটস্টেশন যাত্রার জন্য চালকসহ আরামদায়ক গাড়ি।",
+cars:[
+["টয়োটা ইনোভা ক্রিস্টা","₹3,000","১০ ঘণ্টা • ৮০ কিমি • ৭-সিটার AC • চালকসহ"],
+["টয়োটা রুমিয়ন","₹2,600","১০ ঘণ্টা • ৮০ কিমি • ৭-সিটার • দীর্ঘ যাত্রায় আরামদায়ক"],
+["টয়োটা ইনোভা","₹2,500","১০ ঘণ্টা • ৮০ কিমি • বেশি লাগেজ স্পেস • আউটস্টেশন"],
+["মারুতি সুজুকি ডিজায়ার","₹2,000","১০ ঘণ্টা • ৮০ কিমি • আরামদায়ক ৪-সিটার • জ্বালানি সাশ্রয়ী"]
+],
+rateHead:["গাড়ি","১০ ঘণ্টা / ৮০ কিমি","অতিরিক্ত / ঘণ্টা","অতিরিক্ত / কিমি"],
+rates:[
+["টয়োটা ক্রিস্টা","₹3,000","₹300","₹30"],
+["টয়োটা রুমিয়ন","₹2,600","₹260","₹26"],
+["টয়োটা ইনোভা","₹2,500","₹250","₹25"],
+["সুইফট ডিজায়ার","₹2,000","₹200","₹20"]
+],
+parking:"পার্কিং ও টোল ট্যাক্স: প্রকৃত খরচ অনুযায়ী আলাদা।",
+dest:[
+["ভিক্টোরিয়া মেমোরিয়াল","কলকাতার বিখ্যাত সাদা মার্বেলের স্মৃতিসৌধ, বাগান ও জাদুঘর ঘুরে দেখুন।"],
+["কালিঘাট মন্দির","কলকাতার ঐতিহাসিক শক্তিপীঠ ও গুরুত্বপূর্ণ তীর্থস্থান।"],
+["বিড়লা প্ল্যানেটোরিয়াম","ময়দানের কাছে জনপ্রিয় planetarium ও astronomy attraction।"],
+["আলিপুর চিড়িয়াখানা","কলকাতার ঐতিহাসিক zoological garden, পরিবারসহ ভ্রমণের জন্য জনপ্রিয়।"],
+["ইন্ডিয়ান মিউজিয়াম","কলকাতার অন্যতম প্রধান জাদুঘর, ঐতিহাসিক ও সাংস্কৃতিক সংগ্রহের জন্য পরিচিত।"],
+["গঙ্গাসাগর","সাগর দ্বীপের তীর্থ ও সমুদ্রসৈকত—ধর্মীয় ও অবকাশ যাত্রার জনপ্রিয় গন্তব্য।"],
+["সুন্দরবন","বিশ্বখ্যাত ম্যানগ্রোভ অঞ্চল; নৌকা ভ্রমণ ও প্রকৃতি দেখার জন্য পরিচিত।"],
+["শান্তিনিকেতন","রবীন্দ্রনাথ ঠাকুরের সঙ্গে যুক্ত সাংস্কৃতিক ও শিক্ষাকেন্দ্রিক ঐতিহ্যবাহী স্থান।"],
+["তারাপীঠ","বীরভূমের বিখ্যাত মন্দির ও তীর্থনগরী।"]
+]
+},
+hi:{
+nav:["हमारे बारे में","सेवाएँ","कारें","गंतव्य","संपर्क","कैब बुक करें"],
+fleetTitle:"अपनी पसंद की सफेद कार चुनें",
+fleetIntro:"शहर, परिवार और आउटस्टेशन यात्राओं के लिए आरामदायक ड्राइवर-चालित वाहन।",
+cars:[
+["टोयोटा इनोवा क्रिस्टा","₹3,000","10 घंटे • 80 किमी • 7-सीटर AC • ड्राइवर सहित"],
+["टोयोटा रुमियन","₹2,600","10 घंटे • 80 किमी • 7-सीटर • लंबी यात्रा के लिए आरामदायक"],
+["टोयोटा इनोवा","₹2,500","10 घंटे • 80 किमी • अधिक सामान की जगह • आउटस्टेशन"],
+["मारुति सुजुकी डिजायर","₹2,000","10 घंटे • 80 किमी • आरामदायक 4-सीटर • ईंधन कुशल"]
+],
+rateHead:["वाहन","10 घंटे / 80 किमी","अतिरिक्त / घंटा","अतिरिक्त / किमी"],
+rates:[
+["टोयोटा क्रिस्टा","₹3,000","₹300","₹30"],
+["टोयोटा रुमियन","₹2,600","₹260","₹26"],
+["टोयोटा इनोवा","₹2,500","₹250","₹25"],
+["स्विफ्ट डिजायर","₹2,000","₹200","₹20"]
+],
+parking:"पार्किंग और टोल टैक्स: वास्तविक खर्च के अनुसार अलग।",
+dest:[
+["विक्टोरिया मेमोरियल","कोलकाता का प्रसिद्ध सफेद संगमरमर का स्मारक, उद्यान और संग्रहालय।"],
+["कालीघाट मंदिर","कोलकाता का ऐतिहासिक शक्तिपीठ और महत्वपूर्ण तीर्थ स्थल।"],
+["बिड़ला प्लेनेटेरियम","मयदान के पास लोकप्रिय प्लेनेटेरियम और खगोल विज्ञान केंद्र।"],
+["अलीपुर चिड़ियाघर","कोलकाता का ऐतिहासिक चिड़ियाघर, परिवार के साथ घूमने के लिए लोकप्रिय।"],
+["इंडियन म्यूज़ियम","कोलकाता के प्रमुख संग्रहालयों में से एक, ऐतिहासिक और सांस्कृतिक संग्रह के लिए प्रसिद्ध।"],
+["गंगासागर","सागर द्वीप का तीर्थ और समुद्र तट वाला लोकप्रिय गंतव्य।"],
+["सुंदरबन","विश्व प्रसिद्ध मैंग्रोव क्षेत्र, नाव यात्रा और प्रकृति अनुभवों के लिए जाना जाता है।"],
+["शांतिनिकेतन","रवीन्द्रनाथ टैगोर से जुड़ा सांस्कृतिक और शैक्षिक विरासत स्थल।"],
+["तारापीठ","बीरभूम का प्रसिद्ध मंदिर और तीर्थ नगरी।"]
+]
+}
+};
+
+function apply(lang){
+  const t=T[lang]||T.en;
+  document.documentElement.lang=lang==="bn"?"bn":lang==="hi"?"hi":"en";
+  localStorage.setItem("shivamLang",lang);
+
+  const nav=document.querySelectorAll(".menu a");
+  nav.forEach((a,i)=>{ if(t.nav[i]) a.textContent=t.nav[i]; });
+  const book=document.querySelector('a.btn.gold[href*="wa.me"] span[data-i18n-key="Book Your Cab"]');
+  if(book) book.textContent=t.nav[5];
+
+  const fleet=document.querySelector("#fleet");
+  if(fleet){
+    const h2=fleet.querySelector(".section-head h2"), p=fleet.querySelector(".section-head p");
+    if(h2) h2.textContent=t.fleetTitle;
+    if(p) p.textContent=t.fleetIntro;
+    [...fleet.querySelectorAll(".car")].slice(0,4).forEach((card,i)=>{
+      const h=card.querySelector("h3"), price=card.querySelector(".price"), meta=card.querySelector(".meta");
+      if(h) h.textContent=t.cars[i][0];
+      if(price) price.textContent=t.cars[i][1];
+      if(meta) meta.textContent=t.cars[i][2];
+    });
+    const table=fleet.querySelector("table.rate");
+    if(table){
+      table.querySelectorAll("thead th").forEach((th,i)=>{ if(t.rateHead[i]) th.textContent=t.rateHead[i]; });
+      [...table.querySelectorAll("tbody tr")].slice(0,4).forEach((tr,i)=>{
+        const cells=tr.querySelectorAll("td");
+        t.rates[i].forEach((v,j)=>{ if(cells[j]) cells[j].textContent=v; });
+      });
+    }
+    const note=[...fleet.querySelectorAll("p")].find(x=>x.textContent.includes("Parking")||x.textContent.includes("পার্কিং")||x.textContent.includes("पार्किंग"));
+    if(note) note.textContent=t.parking;
+  }
+
+  const destSection=document.querySelector("#destinations");
+  if(destSection){
+    [...destSection.querySelectorAll(".dest")].slice(0,9).forEach((card,i)=>{
+      const h=card.querySelector("h3"), p=card.querySelector("p");
+      if(h) h.textContent=t.dest[i][0];
+      if(p) p.textContent=t.dest[i][1];
+    });
+  }
+
+  document.querySelectorAll(".lang-switch button").forEach(b=>{
+    b.classList.toggle("active",b.dataset.lang===lang);
+  });
+}
+
+document.querySelectorAll(".lang-switch button").forEach(btn=>{
+  btn.addEventListener("click",()=>apply(btn.dataset.lang));
+});
+apply(localStorage.getItem("shivamLang")||"en");
+})();
+</script>
+</body></html>
