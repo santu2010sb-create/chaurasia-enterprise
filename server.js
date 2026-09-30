@@ -3,6 +3,7 @@ const cors = require("cors");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Database = require("better-sqlite3");
+const path = require("path");
 
 const app = express();
 const PORT = Number(process.env.PORT || 8080);
@@ -88,6 +89,15 @@ if(!count){
   console.log("Created default admin user. Change ADMIN_PASSWORD before production use.");
 }
 
+
+// Android-safe admin panel: served by the same Render origin.
+app.get("/admin", (req,res) => {
+  res.sendFile(path.join(__dirname, "admin.html"));
+});
+app.get("/admin.html", (req,res) => {
+  res.sendFile(path.join(__dirname, "admin.html"));
+});
+
 app.get("/",(req,res)=>res.json({service:"SHIVAM TOUR & TRAVELS API",status:"online",health:"/api/health"}));
 app.get("/api/health",(req,res)=>res.json({ok:true,service:"Shivam Travel API",time:now()}));
 
@@ -143,6 +153,36 @@ for(const [route,[table,fields]] of Object.entries(resources)){
     }catch(e){res.status(400).json({error:e.message});}
   });
 }
+
+// Owner-only cleanup for records created by the API test tools.
+// It targets only unmistakable test markers and does not delete normal business data.
+app.post("/api/test-cleanup",auth,role("Owner"),(req,res)=>{
+  try{
+    const customer = db.prepare(
+      "DELETE FROM customers WHERE name=? AND phone=? AND email=? AND notes=?"
+    ).run(
+      "API TEST CUSTOMER",
+      "9999900000",
+      "api-test@shivam.local",
+      "Created by Shivam Database Tester"
+    );
+
+    const vehicles = db.prepare(
+      "DELETE FROM vehicles WHERE reg LIKE ? AND notes=?"
+    ).run(
+      "API-TEST-%",
+      "Created by Shivam Database Tester"
+    );
+
+    res.json({
+      ok:true,
+      message:"API test data cleanup completed",
+      deleted:{customers:customer.changes,vehicles:vehicles.changes}
+    });
+  }catch(e){
+    res.status(400).json({error:e.message});
+  }
+});
 
 app.post("/api/sync",auth,(req,res)=>{
   const incoming=req.body||{};
