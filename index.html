@@ -65,6 +65,7 @@ label{font-weight:700;font-size:13px;display:block;margin-top:9px}
 input,select,textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #d5dde6;border-radius:8px;font:inherit;background:#fff}
 textarea{min-height:90px;resize:vertical}
 .form-card button{width:100%;margin-top:15px}
+.passenger-section{margin-top:18px}.passenger-section h4{margin:0 0 8px;color:var(--navy);font-size:16px}.passenger-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}.passenger-table{width:100%;min-width:620px;border-collapse:collapse;background:#fff}.passenger-table th,.passenger-table td{border-bottom:1px solid var(--line);padding:7px;text-align:left;font-size:12px}.passenger-table th{background:#f4f7fa;color:var(--navy);font-weight:900;white-space:nowrap}.passenger-table tr:last-child td{border-bottom:0}.passenger-table td:first-child{font-weight:900;text-align:center;width:48px}.passenger-table input,.passenger-table select{margin:0;padding:8px;border-radius:6px;font-size:12px;min-width:88px}.passenger-table td:nth-child(2) input{min-width:150px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .info-card{padding:25px}
 .info-card h3{margin-top:0}
@@ -228,7 +229,11 @@ footer p{margin:6px 0}
       <label>From<input name="from" required></label>
       <label>To<input name="to" required></label>
       <label>Passengers<input name="passengers" required></label>
-      <label>Additional Details<textarea name="details" placeholder="Class, preferred train, passenger details..."></textarea></label>
+      <div class="passenger-section">
+        <h4>Passenger Details (Up to 6)</h4>
+        <div class="passenger-table-wrap"><table class="passenger-table"><thead><tr><th>Sl No</th><th>Name</th><th>Age</th><th>Sex</th><th>Berth Choice</th></tr></thead><tbody><tr><td>1</td><td><input name="rail_passenger_1_name" aria-label="Passenger 1 name" placeholder="Name"></td><td><input name="rail_passenger_1_age" type="number" min="0" max="120" aria-label="Passenger 1 age" placeholder="Age"></td><td><select name="rail_passenger_1_sex" aria-label="Passenger 1 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="rail_passenger_1_berth" aria-label="Passenger 1 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>2</td><td><input name="rail_passenger_2_name" aria-label="Passenger 2 name" placeholder="Name"></td><td><input name="rail_passenger_2_age" type="number" min="0" max="120" aria-label="Passenger 2 age" placeholder="Age"></td><td><select name="rail_passenger_2_sex" aria-label="Passenger 2 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="rail_passenger_2_berth" aria-label="Passenger 2 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>3</td><td><input name="rail_passenger_3_name" aria-label="Passenger 3 name" placeholder="Name"></td><td><input name="rail_passenger_3_age" type="number" min="0" max="120" aria-label="Passenger 3 age" placeholder="Age"></td><td><select name="rail_passenger_3_sex" aria-label="Passenger 3 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="rail_passenger_3_berth" aria-label="Passenger 3 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>4</td><td><input name="rail_passenger_4_name" aria-label="Passenger 4 name" placeholder="Name"></td><td><input name="rail_passenger_4_age" type="number" min="0" max="120" aria-label="Passenger 4 age" placeholder="Age"></td><td><select name="rail_passenger_4_sex" aria-label="Passenger 4 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="rail_passenger_4_berth" aria-label="Passenger 4 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>5</td><td><input name="rail_passenger_5_name" aria-label="Passenger 5 name" placeholder="Name"></td><td><input name="rail_passenger_5_age" type="number" min="0" max="120" aria-label="Passenger 5 age" placeholder="Age"></td><td><select name="rail_passenger_5_sex" aria-label="Passenger 5 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="rail_passenger_5_berth" aria-label="Passenger 5 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>6</td><td><input name="rail_passenger_6_name" aria-label="Passenger 6 name" placeholder="Name"></td><td><input name="rail_passenger_6_age" type="number" min="0" max="120" aria-label="Passenger 6 age" placeholder="Age"></td><td><select name="rail_passenger_6_sex" aria-label="Passenger 6 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="rail_passenger_6_berth" aria-label="Passenger 6 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr></tbody></table></div>
+      </div>
+      <label>Additional Details<textarea name="details" placeholder="Class, preferred train, return journey, etc."></textarea></label>
       <button class="btn btn-green" type="submit">Send Rail Request on WhatsApp</button>
     </form>
 
@@ -240,7 +245,11 @@ footer p{margin:6px 0}
       <label>From<input name="from" required></label>
       <label>To<input name="to" required></label>
       <label>Passengers<input name="passengers" required></label>
-      <label>Additional Details<textarea name="details" placeholder="Preferred airline, baggage, return journey..."></textarea></label>
+      <div class="passenger-section">
+        <h4>Passenger Details (Up to 6)</h4>
+        <div class="passenger-table-wrap"><table class="passenger-table"><thead><tr><th>Sl No</th><th>Name</th><th>Age</th><th>Sex</th><th>Berth Choice</th></tr></thead><tbody><tr><td>1</td><td><input name="air_passenger_1_name" aria-label="Passenger 1 name" placeholder="Name"></td><td><input name="air_passenger_1_age" type="number" min="0" max="120" aria-label="Passenger 1 age" placeholder="Age"></td><td><select name="air_passenger_1_sex" aria-label="Passenger 1 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="air_passenger_1_berth" aria-label="Passenger 1 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>2</td><td><input name="air_passenger_2_name" aria-label="Passenger 2 name" placeholder="Name"></td><td><input name="air_passenger_2_age" type="number" min="0" max="120" aria-label="Passenger 2 age" placeholder="Age"></td><td><select name="air_passenger_2_sex" aria-label="Passenger 2 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="air_passenger_2_berth" aria-label="Passenger 2 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>3</td><td><input name="air_passenger_3_name" aria-label="Passenger 3 name" placeholder="Name"></td><td><input name="air_passenger_3_age" type="number" min="0" max="120" aria-label="Passenger 3 age" placeholder="Age"></td><td><select name="air_passenger_3_sex" aria-label="Passenger 3 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="air_passenger_3_berth" aria-label="Passenger 3 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>4</td><td><input name="air_passenger_4_name" aria-label="Passenger 4 name" placeholder="Name"></td><td><input name="air_passenger_4_age" type="number" min="0" max="120" aria-label="Passenger 4 age" placeholder="Age"></td><td><select name="air_passenger_4_sex" aria-label="Passenger 4 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="air_passenger_4_berth" aria-label="Passenger 4 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>5</td><td><input name="air_passenger_5_name" aria-label="Passenger 5 name" placeholder="Name"></td><td><input name="air_passenger_5_age" type="number" min="0" max="120" aria-label="Passenger 5 age" placeholder="Age"></td><td><select name="air_passenger_5_sex" aria-label="Passenger 5 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="air_passenger_5_berth" aria-label="Passenger 5 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr><tr><td>6</td><td><input name="air_passenger_6_name" aria-label="Passenger 6 name" placeholder="Name"></td><td><input name="air_passenger_6_age" type="number" min="0" max="120" aria-label="Passenger 6 age" placeholder="Age"></td><td><select name="air_passenger_6_sex" aria-label="Passenger 6 sex"><option value="">Sex</option><option>Male</option><option>Female</option><option>Other</option></select></td><td><select name="air_passenger_6_berth" aria-label="Passenger 6 berth choice"><option value="">Choice</option><option>No Preference</option><option>Lower</option><option>Middle</option><option>Upper</option><option>Side Lower</option><option>Side Upper</option></select></td></tr></tbody></table></div>
+      </div>
+      <label>Additional Details<textarea name="details" placeholder="Preferred airline, baggage, return journey, etc."></textarea></label>
       <button class="btn btn-green" type="submit">Send Air Request on WhatsApp</button>
     </form>
   </div>
@@ -286,13 +295,30 @@ function sendWhatsApp(event, type) {
   event.preventDefault();
   const form = event.target;
   const data = new FormData(form);
-  let message = type + "%0A%0A";
+  const lines = [];
+  const passengerGroups = {};
   for (const [key, value] of data.entries()) {
-    if (value) message += key.replace(/_/g," ") + ": " + value + "%0A";
+    if (!value) continue;
+    const match = key.match(/^(rail_passenger|air_passenger)_(\d+)_(name|age|sex|berth)$/);
+    if (match) {
+      const group = match[1], no = match[2], field = match[3];
+      passengerGroups[group] ||= {};
+      passengerGroups[group][no] ||= {};
+      passengerGroups[group][no][field] = value;
+    } else {
+      lines.push(key.replace(/_/g," ") + ": " + value);
+    }
   }
-  window.open("https://wa.me/919804763573?text=" + encodeURIComponent(
-    type + "\n\n" + Array.from(data.entries()).filter(x=>x[1]).map(x=>x[0].replace(/_/g," ") + ": " + x[1]).join("\n")
-  ), "_blank");
+  for (const group of Object.keys(passengerGroups)) {
+    const label = group === 'rail_passenger' ? 'Rail Passenger Details' : 'Air Passenger Details';
+    lines.push('', label + ':');
+    for (const no of Object.keys(passengerGroups[group])) {
+      const p = passengerGroups[group][no];
+      lines.push(no + '. ' + [p.name,p.age,p.sex,p.berth].filter(Boolean).join(' | '));
+    }
+  }
+  const message = type + "\n\n" + lines.join("\n");
+  window.open("https://wa.me/919804763573?text=" + encodeURIComponent(message), "_blank");
 }
 </script>
 </body>
