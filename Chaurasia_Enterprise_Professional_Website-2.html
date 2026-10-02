@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chaurasia Enterprise | Car Rental, Tours & Ticketing - Kolkata</title>
+<meta name="description" content="Chaurasia Enterprise, Kolkata — reliable car rental, tours, train and flight ticketing, corporate and wedding transportation. Serving since 1999.">
+<style>
+:root{--navy:#082f57;--blue:#0b5d91;--gold:#f4bd24;--cream:#f7f5ef;--ink:#132b45;--muted:#63758a;--white:#fff;--green:#20b85a;--line:#e4e9ef}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(8,47,87,.97);color:#fff;box-shadow:0 5px 20px #0002}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:900;letter-spacing:.5px;font-size:21px}
+.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:1.3px;margin-top:2px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:700;font-size:14px;color:#fff}
+.nav-btn{background:var(--gold);color:#14263a;padding:10px 15px;border-radius:8px}
+.hero{background:linear-gradient(125deg,#062b51,#0b6599);color:#fff;padding:82px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#ffffff16;border:1px solid #ffffff33;padding:8px 13px;border-radius:999px;font-weight:800;font-size:13px}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.02;margin:18px 0;color:#fff}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#e7f0f7;max-width:680px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;text-decoration:none;border:0;padding:13px 18px;border-radius:9px;font-weight:900;cursor:pointer}
+.btn-gold{background:var(--gold);color:#17283c}
+.btn-green{background:var(--green);color:#fff}
+.btn-light{background:#fff;color:var(--navy)}
+.hero-card{background:#fff12;border:1px solid #ffffff30;border-radius:18px;padding:25px;backdrop-filter:blur(4px)}
+.hero-card strong{font-size:26px;display:block;color:var(--gold)}
+.hero-card div{padding:11px 0;border-bottom:1px solid #ffffff20}
+section{padding:70px 0}
+.section-head{max-width:760px;margin-bottom:28px}
+.kicker{color:#b17a00;font-weight:900;letter-spacing:1.3px;font-size:12px;text-transform:uppercase}
+h2{font-size:38px;line-height:1.1;margin:8px 0 10px;color:var(--navy)}
+.sub{color:var(--muted);margin:0}
+.fleet{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.car-card,.form-card,.rate-card,.info-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 28px #0b315d0b}
+.car-photo{height:210px;background:#eef3f7;display:flex;align-items:center;justify-content:center}
+.car-photo img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:17px}
+.card-body h3{margin:0 0 5px;font-size:19px}
+.card-body p{margin:0;color:var(--muted);font-size:14px}
+.dest-section{background:var(--cream)}
+.dest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.place-card{position:relative;height:205px;overflow:hidden;border-radius:14px;text-decoration:none;background:#ddd}
+.place-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.place-card:hover img{transform:scale(1.05)}
+.place-card span{position:absolute;left:0;right:0;bottom:0;padding:35px 13px 12px;color:#fff;font-weight:900;background:linear-gradient(transparent,#062c55e8)}
+.rates{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.rate-card{padding:22px}
+.rate-card h3{margin:0 0 8px}
+.price{font-size:31px;font-weight:900;color:var(--navy)}
+.rate-card p{margin:5px 0;color:var(--muted)}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+.forms{background:#f7f9fb}
+.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.form-card{padding:22px}
+.form-card h3{margin-top:0;color:var(--navy);font-size:23px}
+label{font-weight:700;font-size:13px;display:block;margin-top:9px}
+input,select,textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #d5dde6;border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:90px;resize:vertical}
+.form-card button{width:100%;margin-top:15px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info-card{padding:25px}
+.info-card h3{margin-top:0}
+.contact-line{padding:9px 0;border-bottom:1px solid var(--line)}
+.contact-line:last-child{border-bottom:0}
+.contact-line a{font-weight:800;text-decoration:none}
+.map-link{display:inline-block;margin-top:12px;text-decoration:none;font-weight:900;color:var(--blue)}
+footer{background:#061f3a;color:#dce8f2;padding:38px 0 85px}
+footer .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:25px}
+footer h3{color:#fff;margin-top:0}
+footer p{margin:6px 0}
+.bottom{position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;box-shadow:0 -5px 18px #0002;padding:8px;display:none}
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.small{font-size:12px;color:#8190a0}
+@media(max-width:900px){.hero-grid,.contact-grid{grid-template-columns:1fr}.fleet,.dest-grid,.rates{grid-template-columns:repeat(2,1fr)}.form-grid{grid-template-columns:1fr}nav{display:none}footer .footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.hero{padding:60px 0}h2{font-size:31px}.fleet,.dest-grid,.rates{grid-template-columns:1fr}.place-card{height:220px}footer .footer-grid{grid-template-columns:1fr}.bottom{display:block}body{padding-bottom:58px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+  <div class="brand">CHAURASIA ENTERPRISE<small>TRAVEL • TRANSPORT • TICKETING</small></div>
+  <nav>
+    <a href="#fleet">Cars</a><a href="#destinations">Destinations</a><a href="#rates">Rates</a><a href="#booking">Booking</a>
+    <a class="nav-btn" href="https://wa.me/919804763573" target="_blank">WhatsApp</a>
+  </nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="badge">Serving Since 1999 • 25+ Years • GST Registered</span>
+    <h1>Your Journey,<br><span>Our Responsibility.</span></h1>
+    <p>Reliable car rental, local and outstation travel, train and flight ticketing, airport transfers, corporate transportation and wedding travel solutions from Kolkata.</p>
+    <div class="actions">
+      <a class="btn btn-gold" href="tel:+919830057750">Call Now</a>
+      <a class="btn btn-green" href="https://wa.me/919804763573" target="_blank">WhatsApp Booking</a>
+      <a class="btn btn-light" href="#booking">Book a Service</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <strong>One Point Solution</strong>
+    <div>Car Rental • Local & Outstation</div>
+    <div>Train Ticket • Flight Ticket</div>
+    <div>Corporate • Wedding Transportation</div>
+    <div>Airport Pickup & Drop</div>
+    <div>Custom Trips & Tour Packages</div>
+  </div>
+</div>
+</section>
+
+<section id="fleet">
+<div class="container">
+  <div class="section-head"><div class="kicker">Vehicle Fleet</div><h2>Comfortable Cars for Every Journey</h2><p class="sub">Model-reference photographs are shown below. Your own fleet photographs can be substituted later at any time.</p></div>
+  <div class="fleet"><article class="car-card">
+      <div class="car-photo"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_Innova_Crysta_2.4_Z_side.jpg?width=1200" alt="Toyota Innova Crysta" loading="lazy"></div>
+      <div class="card-body"><h3>Toyota Innova Crysta</h3><p>Available for local, outstation, corporate and event travel.</p></div>
+    </article>
+<article class="car-card">
+      <div class="car-photo"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Right_Front_Three_Quarter_image_of_the_Toyota_Rumion.jpg?width=1200" alt="Toyota Rumion" loading="lazy"></div>
+      <div class="card-body"><h3>Toyota Rumion</h3><p>Available for local, outstation, corporate and event travel.</p></div>
+    </article>
+<article class="car-card">
+      <div class="car-photo"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_Innova.jpg?width=1000" alt="Toyota Innova" loading="lazy"></div>
+      <div class="card-body"><h3>Toyota Innova</h3><p>Available for local, outstation, corporate and event travel.</p></div>
+    </article>
+<article class="car-card">
+      <div class="car-photo"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Maruti_Suzuki_Dzire_VXi_VVT_%28front%29.JPG?width=1200" alt="Swift Dzire" loading="lazy"></div>
+      <div class="card-body"><h3>Swift Dzire</h3><p>Available for local, outstation, corporate and event travel.</p></div>
+    </article></div>
+</div>
+</section>
+
+<section id="destinations" class="dest-section">
+<div class="container">
+  <div class="section-head"><div class="kicker">Travel Destinations</div><h2>Explore Kolkata & Beyond</h2><p class="sub">Popular destinations previously requested, including Eco Park, Nicco Park, Digha, Mandarmani, Bolpur & Santiniketan, Tarapith and Kamarpukur, presented with location-specific photographs.</p></div>
+  <div class="dest-grid"><a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/960px-Victoria_Memorial_situated_in_Kolkata.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/960px-Victoria_Memorial_situated_in_Kolkata.jpg" alt="Victoria Memorial" loading="lazy"><span>Victoria Memorial</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Kalighat_Temple.jpg/960px-Kalighat_Temple.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Kalighat_Temple.jpg/960px-Kalighat_Temple.jpg" alt="Kalighat Temple" loading="lazy"><span>Kalighat Temple</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Birla_Planetarium%2C_Kolkata.jpg/1280px-Birla_Planetarium%2C_Kolkata.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Birla_Planetarium%2C_Kolkata.jpg/1280px-Birla_Planetarium%2C_Kolkata.jpg" alt="Birla Planetarium" loading="lazy"><span>Birla Planetarium</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Indian_museum_kolkata.jpg/960px-Indian_museum_kolkata.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Indian_museum_kolkata.jpg/960px-Indian_museum_kolkata.jpg" alt="Indian Museum" loading="lazy"><span>Indian Museum</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/National_Library_Kolkata.jpg/960px-National_Library_Kolkata.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/National_Library_Kolkata.jpg/960px-National_Library_Kolkata.jpg" alt="National Library" loading="lazy"><span>National Library</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Eco_park-28-new_town_smart_city-kolkata-India.jpg/960px-Eco_park-28-new_town_smart_city-kolkata-India.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Eco_park-28-new_town_smart_city-kolkata-India.jpg/960px-Eco_park-28-new_town_smart_city-kolkata-India.jpg" alt="Eco Park" loading="lazy"><span>Eco Park</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Nicco_Park_Salt_lake.jpg/960px-Nicco_Park_Salt_lake.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Nicco_Park_Salt_lake.jpg/960px-Nicco_Park_Salt_lake.jpg" alt="Nicco Park" loading="lazy"><span>Nicco Park</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Science_city_kolkata.jpg/960px-Science_city_kolkata.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Science_city_kolkata.jpg/960px-Science_city_kolkata.jpg" alt="Science City" loading="lazy"><span>Science City</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Digha_Beach%2C_West_Bengal.JPG/960px-Digha_Beach%2C_West_Bengal.JPG" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Digha_Beach%2C_West_Bengal.JPG/960px-Digha_Beach%2C_West_Bengal.JPG" alt="Digha" loading="lazy"><span>Digha</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mandarmoni_Beach.jpg/960px-Mandarmoni_Beach.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mandarmoni_Beach.jpg/960px-Mandarmoni_Beach.jpg" alt="Mandarmani" loading="lazy"><span>Mandarmani</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tarapith_temple.jpg/960px-Tarapith_temple.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tarapith_temple.jpg/960px-Tarapith_temple.jpg" alt="Tarapith" loading="lazy"><span>Tarapith</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kamarpukur_Ramakrishna_Hut.jpg/960px-Kamarpukur_Ramakrishna_Hut.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kamarpukur_Ramakrishna_Hut.jpg/960px-Kamarpukur_Ramakrishna_Hut.jpg" alt="Kamarpukur" loading="lazy"><span>Kamarpukur</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sri_Sri_Matri_Mandir%2C_Joyrambati.jpg/960px-Sri_Sri_Matri_Mandir%2C_Joyrambati.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sri_Sri_Matri_Mandir%2C_Joyrambati.jpg/960px-Sri_Sri_Matri_Mandir%2C_Joyrambati.jpg" alt="Joyrambati" loading="lazy"><span>Joyrambati</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mangrove_Vegetation_of_Sundarban%2C_West_Bengal%2C_India_01.jpg/960px-Mangrove_Vegetation_of_Sundarban%2C_West_Bengal%2C_India_01.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mangrove_Vegetation_of_Sundarban%2C_West_Bengal%2C_India_01.jpg/960px-Mangrove_Vegetation_of_Sundarban%2C_West_Bengal%2C_India_01.jpg" alt="Sundarbans" loading="lazy"><span>Sundarbans</span>
+    </a>
+<a class="place-card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gangasagar%2C_Kolkata.jpg/960px-Gangasagar%2C_Kolkata.jpg" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gangasagar%2C_Kolkata.jpg/960px-Gangasagar%2C_Kolkata.jpg" alt="Gangasagar" loading="lazy"><span>Gangasagar</span>
+    </a></div>
+</div>
+</section>
+
+<section id="rates">
+<div class="container">
+  <div class="section-head"><div class="kicker">Car Rate Chart</div><h2>10 Hours / 80 KM Package</h2><p class="sub">Final fare is confirmed before booking. Toll, parking, permit and applicable interstate taxes may be additional.</p></div>
+  <div class="rates">
+    <div class="rate-card"><h3>Innova Crysta</h3><div class="price">₹3,000</div><p>10 hours • 80 km included</p><p>Extra hour: ₹300</p><p>Extra km: ₹30</p></div>
+    <div class="rate-card"><h3>Toyota Rumion</h3><div class="price">₹2,600</div><p>10 hours • 80 km included</p><p>Extra hour: ₹260</p><p>Extra km: ₹26</p></div>
+    <div class="rate-card"><h3>Toyota Innova</h3><div class="price">₹2,500</div><p>10 hours • 80 km included</p><p>Extra hour: ₹250</p><p>Extra km: ₹25</p></div>
+    <div class="rate-card"><h3>Swift Dzire</h3><div class="price">₹2,000</div><p>10 hours • 80 km included</p><p>Extra hour: ₹200</p><p>Extra km: ₹20</p></div>
+  </div>
+  <p class="note">Rates are indicative business rates and should be reconfirmed for the requested date, route and vehicle availability.</p>
+</div>
+</section>
+
+<section id="booking" class="forms">
+<div class="container">
+  <div class="section-head"><div class="kicker">Booking Request</div><h2>Choose Your Service</h2><p class="sub">Submit a request and the details will open in WhatsApp for confirmation.</p></div>
+  <div class="form-grid">
+    <form class="form-card" onsubmit="sendWhatsApp(event,'Car Booking')">
+      <h3>🚗 Car Booking</h3>
+      <label>Name<input name="name" required></label>
+      <label>Mobile<input name="mobile" type="tel" required></label>
+      <label>Travel Date<input name="date" type="date" required></label>
+      <label>Pickup Location<input name="pickup" required></label>
+      <label>Destination<input name="destination" required></label>
+      <label>Vehicle<select name="vehicle"><option>Innova Crysta</option><option>Toyota Rumion</option><option>Toyota Innova</option><option>Swift Dzire</option></select></label>
+      <label>Additional Details<textarea name="details" placeholder="Passengers, hours, special requirements..."></textarea></label>
+      <button class="btn btn-green" type="submit">Send Car Request on WhatsApp</button>
+    </form>
+
+    <form class="form-card" onsubmit="sendWhatsApp(event,'Rail Ticket Booking')">
+      <h3>🚆 Rail Booking</h3>
+      <label>Name<input name="name" required></label>
+      <label>Mobile<input name="mobile" type="tel" required></label>
+      <label>Journey Date<input name="date" type="date" required></label>
+      <label>From<input name="from" required></label>
+      <label>To<input name="to" required></label>
+      <label>Passengers<input name="passengers" required></label>
+      <label>Additional Details<textarea name="details" placeholder="Class, preferred train, passenger details..."></textarea></label>
+      <button class="btn btn-green" type="submit">Send Rail Request on WhatsApp</button>
+    </form>
+
+    <form class="form-card" onsubmit="sendWhatsApp(event,'Air Ticket Booking')">
+      <h3>✈️ Air Booking</h3>
+      <label>Name<input name="name" required></label>
+      <label>Mobile<input name="mobile" type="tel" required></label>
+      <label>Travel Date<input name="date" type="date" required></label>
+      <label>From<input name="from" required></label>
+      <label>To<input name="to" required></label>
+      <label>Passengers<input name="passengers" required></label>
+      <label>Additional Details<textarea name="details" placeholder="Preferred airline, baggage, return journey..."></textarea></label>
+      <button class="btn btn-green" type="submit">Send Air Request on WhatsApp</button>
+    </form>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container contact-grid">
+  <div class="info-card">
+    <div class="kicker">About Us</div>
+    <h2>Chaurasia Enterprise</h2>
+    <p>Founded by <strong>Mr. Jitendra Kumar Chaurasia</strong>, Chaurasia Enterprise has been serving customers since 1999 with dependable transportation and travel services for families, professionals, businesses and events.</p>
+    <p><strong>GSTIN:</strong> 19AGRPC1897N1ZJ<br><strong>PAN:</strong> AGRPC1897N</p>
+  </div>
+  <div class="info-card">
+    <div class="kicker">Contact</div>
+    <h3>Visit or Contact Our Kolkata Office</h3>
+    <div class="contact-line"><strong>Address:</strong><br>Wellesley House (1st Floor), 7, Red Cross Place, Kolkata – 700001</div>
+    <div class="contact-line"><strong>Mobile:</strong> <a href="tel:+919830057750">9830057750</a></div>
+    <div class="contact-line"><strong>WhatsApp:</strong> <a href="https://wa.me/919804763573" target="_blank">9804763573</a></div>
+    <div class="contact-line"><strong>Email:</strong> <a href="mailto:Shivam.ncor@gmail.com">Shivam.ncor@gmail.com</a></div>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Chaurasia+Enterprise%2C+Wellesley+House%2C+7+Red+Cross+Place%2C+Kolkata" target="_blank">Open Google Maps →</a>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-grid">
+  <div><h3>CHAURASIA ENTERPRISE</h3><p>Your Journey, Our Responsibility.</p><p class="small">Serving since 1999 • Kolkata</p></div>
+  <div><h3>Services</h3><p>Car Rental</p><p>Train & Flight Tickets</p><p>Corporate & Wedding Transport</p><p>Tour Packages</p></div>
+  <div><h3>Contact</h3><p>9830057750</p><p>WhatsApp: 9804763573</p><p>Shivam.ncor@gmail.com</p></div>
+</div>
+</footer>
+
+<div class="bottom"><div class="bottom-grid">
+  <a class="btn btn-gold" href="tel:+919830057750">Call</a>
+  <a class="btn btn-green" href="https://wa.me/919804763573" target="_blank">WhatsApp</a>
+</div></div>
+
+<script>
+function sendWhatsApp(event, type) {
+  event.preventDefault();
+  const form = event.target;
+  const data = new FormData(form);
+  let message = type + "%0A%0A";
+  for (const [key, value] of data.entries()) {
+    if (value) message += key.replace(/_/g," ") + ": " + value + "%0A";
+  }
+  window.open("https://wa.me/919804763573?text=" + encodeURIComponent(
+    type + "\n\n" + Array.from(data.entries()).filter(x=>x[1]).map(x=>x[0].replace(/_/g," ") + ": " + x[1]).join("\n")
+  ), "_blank");
+}
+</script>
+</body>
+</html>
